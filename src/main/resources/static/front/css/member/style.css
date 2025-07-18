@@ -1,0 +1,214 @@
+/* 회원가입 폼 */
+form[name="frmJoin"] {
+    width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 제목 */
+form[name="frmJoin"] h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 리스트 제거 */
+form[name="frmJoin"] ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form[name="frmJoin"] ul li {
+    margin-bottom: 20px;
+}
+
+/* 입력 필드 */
+form[name="frmJoin"] input[type="text"],
+form[name="frmJoin"] input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+form[name="frmJoin"] input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* 에러 메시지 */
+form[name="frmJoin"] .error {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* 약관 제목 */
+form[name="frmJoin"] h3 {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 약관 텍스트 영역 */
+form[name="frmJoin"] .terms {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 120px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* 약관 동의 체크 */
+form[name="frmJoin"] input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+form[name="frmJoin"] label[for="terms-agree"] {
+    font-size: 14px;
+}
+
+/* 가입 버튼 */
+form[name="frmJoin"] button[type="submit"] {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+form[name="frmJoin"] button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* 카카오 로그인 */
+.social-join-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 전체 로그인 폼 영역 */
+form[name="frmLogin"] {
+    width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 제목 */
+form[name="frmLogin"] h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 리스트 기본 제거 */
+form[name="frmLogin"] ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 리스트 항목 간 간격 */
+form[name="frmLogin"] ul li {
+    margin-bottom: 20px;
+}
+
+/* 입력 필드 공통 스타일 */
+form[name="frmLogin"] input[type="text"],
+form[name="frmLogin"] input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+form[name="frmLogin"] input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* 에러 메시지 */
+form[name="frmLogin"] .error {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* 좌우 영역 분할 */
+form[name="frmLogin"] .left,
+form[name="frmLogin"] .right {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+form[name="frmLogin"] .left {
+    width: 50%;
+}
+
+form[name="frmLogin"] .right {
+    width: 50%;
+    text-align: right;
+}
+
+/* 버튼 스타일 */
+form[name="frmLogin"] button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form[name="frmLogin"] button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* 카카오 로그인 이미지 버튼 */
+form[name="frmLogin"] a img {
+    display: block;
+    margin: 20px auto 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* 회원가입 링크 */
+form[name="frmLogin"] a[href*="/join"] {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+form[name="frmLogin"] a[href*="/join"]:hover {
+    text-decoration: underline;
+}
