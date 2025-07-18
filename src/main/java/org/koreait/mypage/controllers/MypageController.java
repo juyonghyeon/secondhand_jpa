@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/mypage")
 @ApplyCommonController
+@RequestMapping("/mypage")
 @RequiredArgsConstructor
 public class MypageController {
     private final Utils utils;
