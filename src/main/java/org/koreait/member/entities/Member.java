@@ -39,7 +39,7 @@ public class Member extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private SocialType socialType;
 
-    @Column(length = 65)
+    @Column(length=65)
     private String socialToken;
 
     private boolean termsAgree;

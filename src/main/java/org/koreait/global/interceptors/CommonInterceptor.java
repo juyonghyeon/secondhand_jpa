@@ -34,16 +34,18 @@ public class CommonInterceptor implements HandlerInterceptor {
     }
 
     /**
-     * socialType, socialToken은 소셜 로그인 시도시 /member/join 쪽에만 유지하면 되므로 나머지 주소에서는 해당 세션 값을 제거
+     * socialType, socialToken은 소셜 로그인 시도시 /member/join 쪽에만 유지하면 되므로
+     * 나머지 주소에서는 해당 세션 값을 제거
+     *
      * @param request
      */
     private void clearSocialToken(HttpServletRequest request) {
         String url = request.getRequestURI();
-        if (url.contains("/member/join")) {
+        if (!url.contains("/member/join")) {
             HttpSession session = request.getSession();
             session.removeAttribute("socialType");
             session.removeAttribute("socialToken");
         }
     }
-}
 
+}

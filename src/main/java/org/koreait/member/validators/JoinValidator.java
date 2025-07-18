@@ -33,8 +33,8 @@ public class JoinValidator implements Validator, PasswordValidator, MobileValida
 
         // 소셜 회원가입이 아닌 경우는 비밀번호, 비밀번호 확인이 필수 항목
         if (!form.isSocial()) {
-            ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password","NotBlank");
-            ValidationUtils.rejectIfEmptyOrWhitespace(errors, "confirmPassword","NotBlank");
+            ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password", "NotBlank");
+            ValidationUtils.rejectIfEmptyOrWhitespace(errors, "confirmPassword", "NotBlank");
         }
 
 
@@ -47,6 +47,7 @@ public class JoinValidator implements Validator, PasswordValidator, MobileValida
         if (!form.isSocial()) {
             String password = form.getPassword();
             String confirmPassword = form.getConfirmPassword();
+
 
             // 1. 이메일 중복 여부
             if (repository.existsByEmail(form.getEmail())) {
