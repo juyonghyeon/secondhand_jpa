@@ -13,7 +13,7 @@ ENV PYTHON_BASE=/python_project/.venv/bin
 ENV PYTHON_TREND=/python_project/source
 ENV PYTHON_BASE2=/python_project/.venv/bin
 ENV PYTHON_RESTAURANT=/python_project/source
-ENV DDL_AUTO=none
+ENV DDL_AUTO=update
 ENV KAKAO_APIKEY=c858d489f854551908c3038c2f174e0a
 
 ENTRYPOINT ["java", "-Ddb.password=${DB_PASSWORD}","-Ddb.url=${DB_URL}", "-Ddb.username=${DB_USERNAME}", "-Dfile.path=/uploads", "-Dfile.url=/uploads", "-Dpython.base=${PYTHON_BASE}", "-Dpython.trend=${PYTHON_TREND}", "-Dpython.base2=${PYTHON_BASE2}", "-Dpython.restaurant=${PYTHON_RESTAURANT}", "-Dspring.profiles.active=${SPRING_PROFILES_ACTIVE}", "-Dddl.auto=${DDL_AUTO}",  "-Dkakao.apikey=${KAKAO_APIKEY}", "-jar", "app.jar"]
